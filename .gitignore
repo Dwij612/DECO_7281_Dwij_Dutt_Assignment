@@ -1,0 +1,26 @@
+# OS / editors
+.DS_Store
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Secrets (DO commit .env.example, NOT real .env)
+.env
+*.env
+openAI.env
+*.key
+*.pem
+
+# Caches / scratch
+cache_*/
+cache_tmdb/
+*.log
+
+# Optional: large random dumps (keep your training CSVs + model!)
+# *.csv
+# *.joblib
