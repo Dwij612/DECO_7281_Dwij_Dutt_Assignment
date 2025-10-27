@@ -1,0 +1,26 @@
+# Agentic Bias Auditor for Film Loglines (Demographics-Only)
+
+**Purpose (Educational Only).**  
+This is a classroom bias-probe. Paste a logline, the agent parses the lead’s **gender** and **broad cultural region**, predicts success with a small model trained on historical outcomes, and **explains** the decision with base rates, sample sizes (n), and an uncertainty label.  
+**Not a greenlighting tool. Not for hiring or funding decisions.**
+
+---
+
+## One-screen: How to run
+
+```bash
+# 1) Get Python 3.10+ and clone the repo
+git clone https://github.com/<your-user>/<repo>.git
+cd <repo>
+
+# 2) (Optional) create a venv
+python3 -m venv .venv && source .venv/bin/activate
+
+# 3) Install deps
+pip install -r requirements.txt
+
+# 4) (Optional) set OpenAI key if you want LLM-polished wording
+cp .env.example .env  # then put your key in .env
+
+# 5) Run
+streamlit run app.py
